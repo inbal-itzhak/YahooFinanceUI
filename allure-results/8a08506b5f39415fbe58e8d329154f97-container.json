@@ -1,0 +1,12 @@
+{
+  "uuid": "8c4e845e-2c63-4df1-bf06-a3bf3f630b8b",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.VerifyStockCurrency(\"AMZN\",\"Amazon.com, Inc.\")",
+  "children": [
+    "6692eb54-7d8a-4a6b-8ec0-9929455eacdc"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737313007263,
+  "stop": 1737313018821
+}

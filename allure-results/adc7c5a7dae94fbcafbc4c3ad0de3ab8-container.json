@@ -1,0 +1,12 @@
+{
+  "uuid": "a8670da9-af18-488d-aad3-1d3c8b5ab701",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateCloseRate(\"TSLA\",\"Tesla, Inc.\")",
+  "children": [
+    "71dabc0d-aae3-4a07-a538-38a13e6a18ee"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737312549292,
+  "stop": 1737312568310
+}

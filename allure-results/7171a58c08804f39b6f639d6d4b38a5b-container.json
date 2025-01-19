@@ -1,0 +1,12 @@
+{
+  "uuid": "f1cc5d8e-38fd-4d55-8653-fc7bcfc31d22",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateCloseRate(\"AMZN\",\"Amazon.com, Inc.\")",
+  "children": [
+    "f2aa6628-78ca-4a96-8560-54046b3d9df4"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737312587264,
+  "stop": 1737312604976
+}

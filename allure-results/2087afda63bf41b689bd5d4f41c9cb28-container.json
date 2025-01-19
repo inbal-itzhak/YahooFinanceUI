@@ -1,0 +1,12 @@
+{
+  "uuid": "fbbdc66c-665c-40fd-ad82-374565545a5d",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.VerifyStockName(\"TSLA\",\"Tesla, Inc.\")",
+  "children": [
+    "7b326967-40a7-4f0f-9a40-d034626028ce"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737313106104,
+  "stop": 1737313117444
+}

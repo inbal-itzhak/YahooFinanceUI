@@ -1,0 +1,10 @@
+Fetching data for ticker: AMZN
+PolygonClient in PolygonIORequests: RestSharp.RestClient
+site date is Jan 17 2025
+HistoricalData values for row number 0 are: Jan 17 2025,225.84, 226.51,223.08, 225.94, 225.94, 42108900 
+HistoricalData values for row number 1 are: Jan 16 2025,224.42, 224.65,220.31, 220.66, 220.66, 24757300 
+HistoricalData values for row number 2 are: Jan 15 2025,222.83, 223.57,220.75, 223.35, 223.35, 31291300 
+HistoricalData values for row number 3 are: Jan 14 2025,220.44, 221.82,216.20, 217.76, 217.76, 24711700 
+HistoricalData values for row number 4 are: Jan 13 2025,218.06, 219.40,216.47, 218.46, 218.46, 27262700 
+data.Date.ToString() is Jan 17 2025
+HistoricalData returned

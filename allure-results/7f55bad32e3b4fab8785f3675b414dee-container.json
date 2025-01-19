@@ -1,0 +1,12 @@
+{
+  "uuid": "a1eb4099-0427-495e-89e1-90fd038201a7",
+  "name": "YahooFinanceUI.Tests.ChartDataTests.VerifyChartDataOneYear",
+  "children": [
+    "83514f5f-2f18-484a-8a30-7656e4b18f37"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737312451431,
+  "stop": 1737312461929
+}
