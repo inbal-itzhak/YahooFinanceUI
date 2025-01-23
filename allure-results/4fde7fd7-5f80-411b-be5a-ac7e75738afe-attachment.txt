@@ -1,2 +1,0 @@
-Fetching data for ticker: BKNG
-PolygonClient in PolygonIORequests: RestSharp.RestClient

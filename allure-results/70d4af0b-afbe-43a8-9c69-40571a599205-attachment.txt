@@ -1,8 +1,0 @@
-site date is Jan 17 2025
-HistoricalData values for row number 0 are: Jan 17 2025,254.14, 260.62,252.14, 259.16, 259.16, 17630700 
-HistoricalData values for row number 1 are: Jan 16 2025,254.00, 257.04,252.33, 254.27, 254.27, 15292300 
-HistoricalData values for row number 2 are: Jan 15 2025,250.40, 253.67,243.68, 252.35, 252.35, 18448500 
-HistoricalData values for row number 3 are: Jan 14 2025,242.66, 247.72,242.19, 247.47, 247.47, 12407400 
-HistoricalData values for row number 4 are: Jan 13 2025,239.67, 244.54,239.00, 244.21, 244.21, 10005300 
-data.Date.ToString() is Jan 17 2025
-HistoricalData returned

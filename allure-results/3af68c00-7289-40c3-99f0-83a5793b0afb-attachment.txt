@@ -1,2 +1,0 @@
-Fetching data for ticker: MSFT
-PolygonClient in PolygonIORequests: RestSharp.RestClient
