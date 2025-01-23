@@ -8,7 +8,6 @@ using YahooFinanceUI.POM;
 using PolygonTests.APITests.PolygonAPI;
 using Allure.Net.Commons;
 using Allure.NUnit.Attributes;
-using PolygonTests.SeleniumTests.POM;
 using HistoricalData = YahooFinanceUI.POM.HistoricalData;
 
 
