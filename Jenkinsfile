@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo "Building YahooFinanceUI project..."
                 // Replace with your actual build command
-                bat 'msbuild YahooFinanceUITests.sln /t:Build /p:Configuration=Debug'
+                bat '"C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\MSBuild.exe" YahooFinanceUITests.sln /t:Build /p:Configuration=Debug'
             }
         }
 
