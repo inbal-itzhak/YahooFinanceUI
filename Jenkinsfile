@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo "Building YahooFinanceUI project..."
                 // Replace with your actual build command
-                sh 'msbuild YahooFinanceUITests.sln'
+                sh 'dotnet build YahooFinanceUITests.sln --configuration Debug'
             }
         }
 
