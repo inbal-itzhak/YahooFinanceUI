@@ -1,0 +1,4 @@
+chart info is: This 10 minute mountain chart displays price over time for symbol NFLX between 1/16/2025, 4:00:00 AM and 1/23/2025, 9:40:00 AM.  The chart also displays Volume Underlay study.
+chart label is: This 10 minute mountain chart displays price over time for symbol NFLX between 1/16/2025, 4:00:00 AM and 1/23/2025, 9:40:00 AM.  The chart also displays Volume Underlay study.
+Start Time: 16/01/2025 4:00:00
+End Time: 23/01/2025 9:40:00
