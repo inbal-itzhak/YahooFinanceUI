@@ -17,8 +17,9 @@ pipeline {
         }
       stage('Restore') {
             steps {
-                echo "Restoring NuGet packages..."
-                bat '"C:\\Program Files\\dotnet\\dotnet.exe" restore YahooFinanceUITests.sln'
+                echo "Clearing NuGet cache and restoring packages..."
+                bat '"C:\\Program Files\\dotnet\\dotnet.exe" nuget locals all --clear'
+                bat '"C:\\Program Files\\dotnet\\dotnet.exe" restore YahooFinanceUITests.sln --disable-parallel --verbosity detailed'
             }
         }
 
