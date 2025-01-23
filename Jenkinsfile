@@ -15,6 +15,12 @@ pipeline {
                 checkout scm
             }
         }
+      stage('Restore') {
+            steps {
+                echo "Restoring NuGet packages..."
+                bat '"C:\\Program Files\\dotnet\\dotnet.exe" restore YahooFinanceUITests.sln'
+            }
+        }
 
         stage('Build') {
             steps {
