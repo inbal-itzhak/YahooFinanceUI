@@ -5,6 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,9 @@ namespace YahooFinanceUI.POM
         {
         }
 
+        public ReadOnlyCollection<IWebElement> DDB => Driver.FindElements(By.CssSelector("[role='listbox']"));
+        public IWebElement Symbol => Driver.FindElement(By.CssSelector(".modules-module_quoteSymbol__BGsyF"));
+
         [AllureStep("Lookup quote for stock {0}")]
         public void LookupQuote(string ticker)
         {
@@ -26,13 +30,11 @@ namespace YahooFinanceUI.POM
             IWebElement formElement = wait.Until(ExpectedConditions.ElementExists(By.CssSelector("form>[aria-label='Quote Lookup']")));
             FillText(formElement, ticker);
             FillText(formElement, Keys.Enter);
-            var ddb = Driver.FindElements(By.CssSelector("[role='listbox']"));
-            foreach (var linsting in ddb)
+            foreach (var linsting in DDB)
             {
-                var symbol = Driver.FindElement(By.CssSelector(".modules-module_quoteSymbol__BGsyF"));
-                if (GetElementText(symbol) == ticker.ToUpper())
+                if (GetElementText(Symbol) == ticker.ToUpper())
                 {
-                    ClickElement(symbol);
+                    ClickElement(Symbol);
                 }
             }
         }

@@ -1,0 +1,12 @@
+{
+  "uuid": "d624cdcb-c2ad-4074-abff-a5928f5369b2",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateStockVolume(\"JPM\",\"JPMorgan Chase & Co.\")",
+  "children": [
+    "34175fd0-5843-4440-899a-0e955c3bc108"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888138230,
+  "stop": 1737888155757
+}

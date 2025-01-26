@@ -1,0 +1,107 @@
+{
+  "uuid": "22e50d69-eafb-47d7-8f74-eb1cb20c2bbb",
+  "historyId": "0d490193bd61cccfa23844216db89d0b",
+  "testCaseId": "3d7fc4d88c3b79535546511ce999036d",
+  "fullName": "YahooFinanceUI:YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.LookupQuote(System.String,System.String)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-3OBST43"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "YahooFinanceUI.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LookupQuote"
+    },
+    {
+      "name": "testClass",
+      "value": "QuoteLookupFunctionalityTests"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "Lookup Quote"
+    },
+    {
+      "name": "story",
+      "value": "General quote lookup"
+    },
+    {
+      "name": "epic",
+      "value": "Quote Lookup functionality"
+    },
+    {
+      "name": "tag",
+      "value": "Quote Lookup"
+    }
+  ],
+  "links": [],
+  "name": "LookupQuote(\"AMZN\",\"Amazon.com, Inc.\")",
+  "status": "passed",
+  "stage": "finished",
+  "description": "Search for a stock by its ticker symbol\n",
+  "steps": [
+    {
+      "name": "Lookup quote for stock \"AMZN\"",
+      "status": "broken",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "Unable to cast object of type 'OpenQA.Selenium.WebElement' to type 'OpenQA.Selenium.By'.",
+        "trace": "System.InvalidCastException: Unable to cast object of type 'OpenQA.Selenium.WebElement' to type 'OpenQA.Selenium.By'.\r\n   at YahooFinanceUI.POM.QuoteLookup.__a$_around_LookupQuote_100663361_o(String ticker) in C:\\Users\\Inbal\\Source\\Repos\\YahooFinanceUI\\POM\\QuoteLookup.cs:line 32\r\n   at YahooFinanceUI.POM.QuoteLookup.__a$_around_LookupQuote_100663361_u(Object[])\r\n   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [
+        {
+          "name": "ticker",
+          "value": "\"AMZN\"",
+          "excluded": false
+        }
+      ],
+      "start": 1737886090908,
+      "stop": 1737886093927
+    }
+  ],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "bff248d5-71e8-44e3-9bf2-ad8ead0d9b5e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "ticker",
+      "value": "\"AMZN\"",
+      "excluded": false
+    },
+    {
+      "name": "_",
+      "value": "\"Amazon.com, Inc.\"",
+      "excluded": false
+    }
+  ],
+  "start": 1737886090883,
+  "stop": 1737886093997
+}

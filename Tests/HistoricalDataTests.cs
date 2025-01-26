@@ -25,7 +25,7 @@ namespace YahooFinanceUI.Tests
             {
                 Console.WriteLine($"Fetching data for ticker: {ticker}");
                 PolygonSteps polygonSteps = new PolygonSteps(PolygonClient);
-               date = polygonSteps.GetPreviousBusinessDay();
+                date = polygonSteps.GetPreviousBusinessDay();
 
                 var polygonResponseData = await polygonSteps.GetStockOpenCloseDataByDatePolygonIO(ticker, date.ToString("yyyy-MM-dd"));
                 Assert.That(polygonResponseData, Is.Not.Null, $"Failed to fetch data for ticker: {ticker}");
@@ -57,7 +57,7 @@ namespace YahooFinanceUI.Tests
                 var historicalDataFromAPI = await GetHistoricalData(ticker);
                 quoteLookup.LookupQuote(ticker);
                 stockData.NanigateToHistoricalData();
-                POM.HistoricalData siteHistoricalData = stockData.GetStockDataByDate(ticker, date);
+                HistoricalData siteHistoricalData = stockData.GetStockDataByDate(ticker, date);
                 Assert.That(historicalDataFromAPI.Open.ToString(), Is.EqualTo(siteHistoricalData.Open),
                     $"Open Rate mismatch: Expected {siteHistoricalData.Open}, but got {historicalDataFromAPI.Open}");
             }
@@ -78,7 +78,7 @@ namespace YahooFinanceUI.Tests
                 var historicalDataFromAPI = await GetHistoricalData(ticker);
                 quoteLookup.LookupQuote(ticker);
                 stockData.NanigateToHistoricalData();
-                POM.HistoricalData siteHistoricalData = stockData.GetStockDataByDate(ticker, date);
+                HistoricalData siteHistoricalData = stockData.GetStockDataByDate(ticker, date);
                 Assert.That(historicalDataFromAPI.Close.ToString(), Is.EqualTo(siteHistoricalData.Close),
                     $"Open Rate mismatch: Expected {siteHistoricalData.Close}, but got {historicalDataFromAPI.Close}");
             }
@@ -99,7 +99,7 @@ namespace YahooFinanceUI.Tests
                 var historicalDataFromAPI = await GetHistoricalData(ticker);
                 quoteLookup.LookupQuote(ticker);
                 stockData.NanigateToHistoricalData();
-                POM.HistoricalData siteHistoricalData = stockData.GetStockDataByDate(ticker, date);
+                HistoricalData siteHistoricalData = stockData.GetStockDataByDate(ticker, date);
                 Assert.That(historicalDataFromAPI.Volume.ToString(), Is.EqualTo(siteHistoricalData.Volume),
                     $"Open Rate mismatch: Expected {siteHistoricalData.Volume}, but got {historicalDataFromAPI.Volume}");
             }

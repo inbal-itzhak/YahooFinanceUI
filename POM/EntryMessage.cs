@@ -15,22 +15,25 @@ namespace YahooFinanceUI.POM
         {
         }
 
+        public IWebElement GoToButtom => Driver.FindElement(By.CssSelector("#scroll-down-btn"));
+        public IWebElement AcceptAllCookies => Driver.FindElement(By.CssSelector("[name='agree']"));
+        public IWebElement RejectAllCookies => Driver.FindElement(By.CssSelector(".btn.secondary.reject-all"));
 
         public void ClickOnGoToBottomBtn()
         {
-            ClickElement(Driver.FindElement(By.CssSelector("#scroll-down-btn")));
+            ClickElement(GoToButtom);
         }
 
         public void ClickOnAcceptAllCookies()
         {
             WebDriverWait wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(5));
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.CssSelector("[name='agree']"))).Click();
+            wait.Until(ExpectedConditions.ElementToBeClickable(AcceptAllCookies)).Click();
 
         }
 
         public void ClickOnRejectAllCookies()
         {
-            ClickElement(Driver.FindElement(By.CssSelector(".btn.secondary.reject-all")));
+            ClickElement(RejectAllCookies);
         }
     }
 }

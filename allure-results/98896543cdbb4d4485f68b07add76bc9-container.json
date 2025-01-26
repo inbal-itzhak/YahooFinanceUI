@@ -1,0 +1,12 @@
+{
+  "uuid": "d55fc406-64cd-4826-a10b-a55479774cc6",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateCloseRate(\"MSFT\",\"Microsoft Corporation\")",
+  "children": [
+    "94a0ff04-4e2b-435b-b5fb-05df48b3614c"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737887929609,
+  "stop": 1737887949821
+}

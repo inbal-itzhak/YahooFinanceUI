@@ -1,0 +1,2 @@
+Fetching data for ticker: JPM
+PolygonClient in PolygonIORequests: RestSharp.RestClient

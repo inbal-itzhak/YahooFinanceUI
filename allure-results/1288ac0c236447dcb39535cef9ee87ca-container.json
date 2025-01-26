@@ -1,0 +1,26 @@
+{
+  "uuid": "80114c84-ea96-42a4-ba06-4317aec046f7",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests",
+  "children": [
+    "b2658618-a353-423a-8910-6471f09e5639",
+    "94a0ff04-4e2b-435b-b5fb-05df48b3614c",
+    "6b4c71ec-44fd-4545-9210-b8282ee2bafb",
+    "d1d13428-c891-429b-8ece-0ef2c6670d87",
+    "b1af0014-8af9-4aae-8c27-9e2783a4c9e1",
+    "b1cbe922-f388-49a3-ac8d-05d8399d282b",
+    "aa03296e-464e-4ca0-b628-b3cfaa943e04",
+    "26aec741-8426-488e-b9f5-d2c23f080233",
+    "461745d0-779e-44c4-94ad-ac7542744b39",
+    "44e9bf01-2d7f-4b7c-a060-cbc544e8387c",
+    "4c93acba-6ef3-470f-b4d5-2107ccc34728",
+    "c6df90f3-4068-4e2e-a175-b2c4380de797",
+    "7ae51375-e697-4274-92ae-ac8cdab9b922",
+    "34175fd0-5843-4440-899a-0e955c3bc108",
+    "76e3359b-ee7b-493a-90a3-34ac9c5f5eae"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737887871825,
+  "stop": 1737888172344
+}

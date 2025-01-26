@@ -5,7 +5,7 @@ pipeline {
 
     environment {
         PROJECT_NAME = 'YahooFinanceUI'
-        BUILD_DIR = 'bin/Debug/net8.0'
+        BUILD_DIR = 'dev'
     }
 
     stages {
@@ -49,8 +49,10 @@ pipeline {
 
     post {
         always {
-            echo "Cleaning up workspace..."
-            cleanWs()
+          //  echo "Cleaning up workspace..."
+          //  cleanWs()
+            echo "Keep build files in ${BUILD_DIR}"
+            archiveArtifacts artifacts: '**/', allowEmptyArchive: true
         }
         success {
             echo "Build completed successfully!"

@@ -1,0 +1,12 @@
+{
+  "uuid": "d1f0102d-57a7-4b51-a739-939adfbedc42",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.VerifyStockCurrency(\"JPM\",\"JPMorgan Chase & Co.\")",
+  "children": [
+    "402a0ead-f2a3-4ca9-a59d-08274717a53a"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888377879,
+  "stop": 1737888390304
+}

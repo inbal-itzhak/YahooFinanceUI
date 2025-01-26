@@ -16,13 +16,22 @@ namespace YahooFinanceUI.POM
         {
         }
 
-        
+        public IWebElement ExchangeData => Driver.FindElement(By.CssSelector("span.exchange.yf-wk4yba"));
+        IWebElement StockName => Driver.FindElement(By.CssSelector("h1.yf-xxbei9"));
+        public IWebElement StockPrice => Driver.FindElement(By.CssSelector("[data-testid='qsp-price']"));
+        public IWebElement PriceChange => Driver.FindElement(By.CssSelector("[data-testid='qsp-price-change']"));
+        public IWebElement PriceChangePercent => Driver.FindElement(By.CssSelector("[data-testid='qsp-price-change-percent']"));
+        public IWebElement PostPrice => Driver.FindElement(By.CssSelector("[data-testid='qsp-post-price']"));
+        public IWebElement PostPriceChange => Driver.FindElement(By.CssSelector("[data-testid='qsp-post-price-change']"));
+        public IWebElement PostPriceChangePercent => Driver.FindElement(By.CssSelector("[data-testid='qsp-post-price-change-percent']"));
+
+
         public IWebElement GetExchangeData(string ticker)
         {
-            IWebElement exchange =  Driver.FindElement(By.CssSelector("span.exchange.yf-wk4yba"));
+           
             //".exchange.yf-wk4yba span"
 
-            return exchange;
+            return ExchangeData;
         }
 
         [AllureStep("Get stock {0} traded Exchange data")]
@@ -68,8 +77,8 @@ namespace YahooFinanceUI.POM
         [AllureStep("Get stock name for symbol {0}")]
         public string GetStockName(string ticker)
         {
-           IWebElement stockNameElement = Driver.FindElement(By.CssSelector("h1.yf-xxbei9"));
-           string fullStockName =  GetElementText(stockNameElement);
+         
+           string fullStockName =  GetElementText(StockName);
             string stockName = System.Text.RegularExpressions.Regex.Replace(fullStockName, @"\s\([^)]+\)$", "");
             stockName = stockName.Replace(",", "");//.TrimEnd('.');
 
@@ -79,45 +88,42 @@ namespace YahooFinanceUI.POM
         [AllureStep("Get stock {0} price")]
         public double GetstockPrice(string ticker)
         {
-            IWebElement stockPriceElement = Driver.FindElement(By.CssSelector("[data-testid='qsp-price']"));
-            string price = GetElementText(stockPriceElement);
+            string price = GetElementText(StockPrice);
             return ParseStringToDouble(price);
         }
 
         [AllureStep("Get stock {0} price change in cost")]
         public string GetStockPriceChange(string ticker)
         {
-            IWebElement priceChange = Driver.FindElement(By.CssSelector("[data-testid='qsp-price-change']"));
-            return GetElementText(priceChange);
+           
+            return GetElementText(PriceChange);
         }
 
         [AllureStep("Get stock {0} price change in percents")]
         public string GetStockPriceChangePercent(string ticker)
         {
-            IWebElement priceChangePercent = Driver.FindElement(By.CssSelector("[data-testid='qsp-price-change-percent']"));
-            return GetElementText(priceChangePercent);
+           
+            return GetElementText(PriceChangePercent);
         }
 
         [AllureStep("Get stock {0} post market price")]
         public double GetPostMarketPrice(string ticker)
         {
-            IWebElement postPrice = Driver.FindElement(By.CssSelector("[data-testid='qsp-post-price']"));
-            string postPriceTxt = GetElementText(postPrice);
-           return ParseStringToDouble(postPriceTxt);
+           
+           return ParseStringToDouble(PostPrice.Text);
         }
 
 
         [AllureStep("Get stock {0} post market price change in cost")]
         public string GetPostPriceChange(string ticker)
         {
-            IWebElement postPriceChange = Driver.FindElement(By.CssSelector("[data-testid='qsp-post-price-change']"));
-            return GetElementText(postPriceChange);
+            return GetElementText(PostPriceChange);
         }
 
         [AllureStep("Get stock {0} post market price change in percent")]
         public string GettPostPriceChangePercent(string ticker)
         {
-            return GetElementText(Driver.FindElement(By.CssSelector("[data-testid='qsp-post-price-change-percent']")));
+            return GetElementText(PostPriceChangePercent);
         }
 
     }

@@ -1,0 +1,12 @@
+{
+  "uuid": "928f4312-5e91-4a29-831b-1fb78569a66c",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateOpenRate(\"BKNG\",\"Booking Holdings Inc.\")",
+  "children": [
+    "b1cbe922-f388-49a3-ac8d-05d8399d282b"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888002053,
+  "stop": 1737888018427
+}

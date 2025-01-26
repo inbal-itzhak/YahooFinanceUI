@@ -1,0 +1,12 @@
+{
+  "uuid": "a85db82c-4de9-4336-9965-fee0e304648c",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateStockVolume(\"AMZN\",\"Amazon.com, Inc.\")",
+  "children": [
+    "76e3359b-ee7b-493a-90a3-34ac9c5f5eae"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888155758,
+  "stop": 1737888172343
+}

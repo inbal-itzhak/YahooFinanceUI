@@ -1,0 +1,12 @@
+{
+  "uuid": "14583944-18ed-4424-ad85-33287c58a2ba",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.VerifyStockCurrency(\"MSFT\",\"Microsoft Corporation\")",
+  "children": [
+    "2f255967-77e1-403e-baab-7c5c7fc47ace"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888350741,
+  "stop": 1737888365868
+}

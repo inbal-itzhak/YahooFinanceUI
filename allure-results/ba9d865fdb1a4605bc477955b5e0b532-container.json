@@ -1,0 +1,12 @@
+{
+  "uuid": "3a16126a-f144-41e4-a58e-942051d4248c",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateStockVolume(\"BKNG\",\"Booking Holdings Inc.\")",
+  "children": [
+    "4c93acba-6ef3-470f-b4d5-2107ccc34728"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888085438,
+  "stop": 1737888105019
+}

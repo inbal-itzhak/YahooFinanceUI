@@ -1,0 +1,12 @@
+{
+  "uuid": "71ee76fe-124a-4c30-8890-05e0179ff929",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateOpenRate(\"AMZN\",\"Amazon.com, Inc.\")",
+  "children": [
+    "44e9bf01-2d7f-4b7c-a060-cbc544e8387c"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888068534,
+  "stop": 1737888085436
+}

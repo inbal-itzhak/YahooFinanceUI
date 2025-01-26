@@ -1,0 +1,2 @@
+Fetching data for ticker: AMZN
+PolygonClient in PolygonIORequests: RestSharp.RestClient

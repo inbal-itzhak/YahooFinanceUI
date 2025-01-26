@@ -1,0 +1,12 @@
+{
+  "uuid": "935eb1bf-62b5-48f9-a101-0ababe1e1477",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.LookupQuote(\"BKNG\",\"Booking Holdings Inc.\")",
+  "children": [
+    "64a6cb35-0bf5-43dd-b6f8-fd50aa9a5a3c"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888210737,
+  "stop": 1737888224139
+}

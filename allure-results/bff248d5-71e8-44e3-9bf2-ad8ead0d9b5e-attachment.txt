@@ -1,0 +1,15 @@
+Exception has been thrown by the target of an invocation.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> System.InvalidCastException: Unable to cast object of type 'OpenQA.Selenium.WebElement' to type 'OpenQA.Selenium.By'.
+   at YahooFinanceUI.POM.QuoteLookup.__a$_around_LookupQuote_100663361_o(String ticker) in C:\Users\Inbal\Source\Repos\YahooFinanceUI\POM\QuoteLookup.cs:line 32
+   at YahooFinanceUI.POM.QuoteLookup.__a$_around_LookupQuote_100663361_u(Object[])
+   at Allure.Net.Commons.Steps.AllureAbstractStepAspect.WrapSyncVoid(Func`2 target, Object[] args, MethodBase metadata, String stepName, List`1 stepParameters)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   --- End of inner exception stack trace ---
+   at System.Reflection.MethodBaseInvoker.InvokeWithManyArgs(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Allure.Net.Commons.Steps.AllureStepAspectBase.Around(String name, Object[] args, Func`2 target, MethodBase metadata, Type returnType)
+   at YahooFinanceUI.POM.QuoteLookup.__a$_around_LookupQuote_100663361_w_0(Object[])
+   at YahooFinanceUI.POM.QuoteLookup.LookupQuote(String ticker)
+   at YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.LookupQuote(String ticker, String _) in C:\Users\Inbal\Source\Repos\YahooFinanceUI\Tests\QuoteLookupFunctionalityTests.cs:line 56

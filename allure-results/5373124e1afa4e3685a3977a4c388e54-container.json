@@ -1,0 +1,12 @@
+{
+  "uuid": "e8b65544-3f1e-4ca5-b8f9-0d4b61b9032b",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests",
+  "children": [
+    "7097bfb7-d287-4035-9bbb-318bd8972c19"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737886238264,
+  "stop": 1737886287028
+}

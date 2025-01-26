@@ -1,0 +1,12 @@
+{
+  "uuid": "b9e8e9f9-2b0e-4133-b9dc-83fa0d2948c6",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.VerifyStockCurrency(\"BKNG\",\"Booking Holdings Inc.\")",
+  "children": [
+    "55f9df3b-691f-44f0-a242-a77dbafa6502"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888338153,
+  "stop": 1737888350740
+}

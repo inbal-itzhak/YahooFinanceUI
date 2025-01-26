@@ -1,0 +1,12 @@
+{
+  "uuid": "baf142f3-a26f-42b4-8375-ed28dbfb63e5",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.LookupQuote(\"JPM\",\"JPMorgan Chase & Co.\")",
+  "children": [
+    "261509b1-6ec7-4a53-a125-a683646a4edd"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888250940,
+  "stop": 1737888263101
+}

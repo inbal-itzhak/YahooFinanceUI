@@ -1,0 +1,17 @@
+{
+  "uuid": "9fa6060c-3217-4cda-806d-03bceda8ebb4",
+  "name": "YahooFinanceUI.Tests.ChartDataTests",
+  "children": [
+    "03193296-3915-44db-8882-79f8c7a2848b",
+    "4ed38bde-e3c7-4cc1-aae4-7cc46e2b08c8",
+    "9ebf73e0-7bc0-4ef2-ad24-cf17213c9e07",
+    "44ded1fa-7198-4629-8fa6-ed60728b6ab0",
+    "bf02be78-cc03-4dc3-9fa7-167e5156c7a3",
+    "360c8b2f-328f-4745-a246-666f4e0309f2"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737887754351,
+  "stop": 1737887871399
+}

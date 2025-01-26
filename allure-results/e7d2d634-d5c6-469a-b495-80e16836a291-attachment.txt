@@ -1,0 +1,4 @@
+chart info is: This 1 week mountain chart displays price over time for symbol NFLX between 1/27/2020 and 3/10/2025.  The chart also displays Volume Underlay study.
+chart label is: This 1 week mountain chart displays price over time for symbol NFLX between 1/27/2020 and 3/10/2025.  The chart also displays Volume Underlay study.
+Start Time: 27/01/2020 0:00:00
+End Time: 10/03/2025 0:00:00

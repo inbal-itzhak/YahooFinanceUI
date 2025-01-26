@@ -1,0 +1,4 @@
+chart info is: This 1 day mountain chart displays price over time for symbol NFLX between 12/26/2024 and 1/27/2025.  The chart also displays Volume Underlay study.
+chart label is: This 1 day mountain chart displays price over time for symbol NFLX between 12/26/2024 and 1/27/2025.  The chart also displays Volume Underlay study.
+Start Time: 26/12/2024 0:00:00
+End Time: 27/01/2025 0:00:00

@@ -1,0 +1,12 @@
+{
+  "uuid": "b491c2f4-f377-4131-8389-fee814aaefee",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateStockVolume(\"TSLA\",\"Tesla, Inc.\")",
+  "children": [
+    "7ae51375-e697-4274-92ae-ac8cdab9b922"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888121630,
+  "stop": 1737888138229
+}

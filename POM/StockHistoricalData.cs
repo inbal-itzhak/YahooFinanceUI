@@ -14,11 +14,20 @@ namespace YahooFinanceUI.POM
     {
         public StockHistoricalData(IWebDriver driver) : base(driver) { }
 
+        public IWebElement HistoricalDataLink => Driver.FindElement(By.CssSelector("[title='Historical Data']"));
+        List<IWebElement> HistoricalDataRows => Driver.FindElements(By.CssSelector(".table-container tbody>tr")).ToList();
+        public IWebElement CompanyName => Driver.FindElement(By.CssSelector("h1.yf-xxbei9"));
+        List<IWebElement> StockData => Driver.FindElements(By.CssSelector(".value.yf-swtyw6")).ToList();
+
+        public IWebElement previousCloseElement => Driver.FindElement(By.CssSelector("[data-field='regularMarketPreviousClose'].yf-dudngy"));
+        public IWebElement OpenRateElement => Driver.FindElement(By.CssSelector("[data-field='regularMarketOpen'].yf-dudngy"));
+        public IWebElement VolumeElement => Driver.FindElement(By.CssSelector("[data-field='regularMarketVolume'].yf-dudngy"));
+
+
         [AllureStep("Navigate to stock historical data")]
         public void NanigateToHistoricalData()
         {
-            IWebElement historicalData = Driver.FindElement(By.CssSelector("[title='Historical Data']"));
-            ClickElement(historicalData);
+            ClickElement(HistoricalDataLink);
         }
 
         [AllureStep("Get stock ({0}) data from date {1}")]
@@ -29,12 +38,11 @@ namespace YahooFinanceUI.POM
             {
                 string siteDate = date.ToString("MMM d yyyy");
                 Console.WriteLine($"site date is {siteDate}");
-                List<IWebElement> dataRows = Driver.FindElements(By.CssSelector(".table-container tbody>tr")).ToList();
                 // checking first 5 rows, since I am only looking for last business day
                 for (int i = 0; i < 5; i++)
                 {
                     List<string> dataCells = new List<string>();
-                    List<IWebElement> cells = dataRows[i].FindElements(By.TagName("td")).ToList();
+                    List<IWebElement> cells = HistoricalDataRows[i].FindElements(By.TagName("td")).ToList();
                     foreach (IWebElement cell in cells)
                     {
                         dataCells.Add(GetElementText(cell).Replace(",",""));
@@ -76,10 +84,10 @@ namespace YahooFinanceUI.POM
 
 
         [AllureStep("Get company name for stock {0}")]
-        public string CompanyName(string ticker)
+        public string CompanyNameString(string ticker)
         {
             IWebElement companyName = Driver.FindElement(By.CssSelector("h1.yf-xxbei9"));
-            return  GetElementText(companyName);
+            return  GetElementText(CompanyName);
         }
 
         [AllureStep("Verify stock Symbol is {0}")]
@@ -102,14 +110,12 @@ namespace YahooFinanceUI.POM
         }
         public List<IWebElement> StockDataList()
         {
-            List<IWebElement> stockData = Driver.FindElements(By.CssSelector(".value.yf-swtyw6")).ToList();
-            return stockData;
+            return StockData;
         }
 
         [AllureStep("Get stock ({0}) previous close rate")]
-        public string PreviousClose(string ticker)
+        public string GetPreviousClose(string ticker)
         {
-            var previousCloseElement = Driver.FindElement(By.CssSelector("[data-field='regularMarketPreviousClose'].yf-dudngy"));
             if (previousCloseElement != null)
             {
                 return GetElementText(previousCloseElement);
@@ -120,10 +126,10 @@ namespace YahooFinanceUI.POM
         [AllureStep("Get stock ({0}) open rate")]
         public string OpenRate(string ticker)
         {
-            var openRateElement = Driver.FindElement(By.CssSelector("[data-field='regularMarketOpen'].yf-dudngy"));
-            if (openRateElement != null)
+           
+            if (OpenRateElement != null)
             {
-                return GetElementText(openRateElement);
+                return GetElementText(OpenRateElement);
             }
             return string.Empty;
         }
@@ -131,10 +137,9 @@ namespace YahooFinanceUI.POM
         [AllureStep("Get stock ({0}) trade volume")]
         public string Volume(string ticker)
         {
-            var openRateElement = Driver.FindElement(By.CssSelector("[data-field='regularMarketVolume'].yf-dudngy"));
-            if (openRateElement != null)
+            if (VolumeElement != null)
             {
-                return GetElementText(openRateElement);
+                return GetElementText(VolumeElement);
             }
             return string.Empty;
         }

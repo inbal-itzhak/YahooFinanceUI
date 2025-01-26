@@ -1,0 +1,12 @@
+{
+  "uuid": "607799c8-18ed-4300-bc5f-1541965de566",
+  "name": "YahooFinanceUI.Tests.HistoricalDataTests.ValidateCloseRate(\"JPM\",\"JPMorgan Chase & Co.\")",
+  "children": [
+    "d1d13428-c891-429b-8ece-0ef2c6670d87"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737887966385,
+  "stop": 1737887984352
+}

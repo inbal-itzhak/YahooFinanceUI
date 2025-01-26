@@ -50,20 +50,10 @@ namespace YahooFinanceUI.Tests
         
         public void LookupQuote(string ticker, string _)
         {
-            try
-            {
-
                 quoteLookup.LookupQuote(ticker);
-
                 string stockSymbol = stockData.GetStockSymbol(ticker);
                 Assert.That(stockSymbol, Is.EqualTo(ticker.ToUpper()), $"Stock symbol mismatch, expected: {ticker.ToUpper()}," +
                 $" actual: {stockSymbol}");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.WriteLine(ex.ToString());
-            }
         }
 
         [Test, Description("Verify the stock name matches expected data from Polygon.IO API"), Category("Quote Lookup"),

@@ -1,0 +1,12 @@
+{
+  "uuid": "4e94edf1-7725-4371-acde-ba63f67c064c",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.VerifyStockName(\"MSFT\",\"Microsoft Corporation\")",
+  "children": [
+    "8626a3f5-98cf-4dad-80c9-2186e292071e"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888475678,
+  "stop": 1737888487185
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "315ac467-a818-465f-a44f-2026c7e38d32",
+  "name": "YahooFinanceUI.Tests.QuoteLookupFunctionalityTests.LookupQuote(\"AMZN\",\"Amazon.com, Inc.\")",
+  "children": [
+    "7d18eb81-249f-43f3-99f5-1ad87bc96705"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1737888263103,
+  "stop": 1737888275891
+}
